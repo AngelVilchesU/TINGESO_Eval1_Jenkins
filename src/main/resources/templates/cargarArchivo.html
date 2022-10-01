@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es"
+xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Carga de archivo</title>
+</head>
+<body>
+    <h1>Subir archivo DATA.txt</h1>
+    <div>
+        <label for="formFileLg" class="form-label">Ingrese el archivo DATA.txt</label>
+        <form th:action="@{/archivo/cargarArchivo}" method="post" enctype="multipart/form-data">
+            <input class="form-control form-control-lg" id="formFileLg" type="file" name="DATA">
+            <input type="submit" value="Subir">
+        </form>
+    </div>
+</body>
+</html>
