@@ -64,9 +64,4 @@ class ArchivoServiceTest {
         String resAct = archivoService.cargarArchivo(archivo);
         assertEquals("El archivo se ha subido exitosamente", resAct);
     }
-
-    @Test
-    void crearDirectorio(){
-        assertEquals(false, archivoService.crearDirectorio());
-    }
 }
